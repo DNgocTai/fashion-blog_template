@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./assets/css/reset.css">
+   <link rel="stylesheet" href="./assets/css/grid.css">
+   <link rel="stylesheet" href="./assets/css/style.css">
+   <title>Fashion Blog</title>
+   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <!-- Social nav -->
+      <div class="nav-social clear-fix hide-sm">
+         <a href="#!" class="btn nav-social__link">
+            <i class="fa-brands fa-square-facebook"></i>
+         </a>
+         <a href="#!" class="btn nav-social__link">
+            <i class="fa-brands fa-instagram"></i>
+         </a>
+         <a href="#!" class="btn nav-social__link">
+            <i class="fa-brands fa-snapchat"></i>
+         </a>
+         <a href="#!" class="btn nav-social__link">
+            <i class="fa-brands fa-flickr"></i>
+         </a>
+         <a href="#!" class="btn nav-social__link">
+            <i class="fa-brands fa-twitter"></i>
+         </a>
+         <a href="#!" class="btn nav-social__link">
+            <i class="fa-brands fa-linkedin-in"></i>
+         </a>
+         <a href="#!" class="btn nav-social__search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+         </a>
+      </div>
+      <!-- Header -->
+   <header class="header">
+      <div class="header-content">
+         <h1 class="title-main mv-10">DAINN BLOGLIFE</h1>
+         <h1 class="title-greeting mv-10">Welcome to the blog of <span class="highlight--bg-black">Jane's world</span></h1>
+      </div>
+      <div class="header-image">
+         <img src="./assets/images/jane.jpg" alt="Fashion Blog">
+         <div class="image-desc">
+            <h3 class="desc-owner mv-10">Dainn's</h3>
+            <h2 class="desc-name mv-10 hide-sm">FASHION BLOG</h2>
+            <button id="btn-sub" class="btn btn-size-l btn-img mv-10" onclick="document.getElementById('modal').style.display='block'">SUBSCRIBE</button>
+         </div>
+      </div>
+   </header>
+   <!-- Container -->
+   <div class="grid container">
+      <div class="row">
+         <!-- Blog entry -->
+         <div class="col lg-8 m-12 sm-12">
+            <div class="blog-entry">
+               <div class="blog-heading">
+                  <h3>TITLE HEADING</h3>
+                  <h5>Title description, <span class="highlight--grey">May 2, 2016</span></h5>
+               </div>
+               <div class="blog-container">
+                  <img src="./assets/images/girl_hat.jpg" alt="Girl Hat">
+                  <div class="blog-content">
+                     <p class="mv-15"><span class="highlight--bold">More Hats!</span> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                     <p class="mv-15">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                  </div>
+               </div>
+               <div class="blog-footer">
+                  <button class="btn blog-btn-footer blog-btn-footer--white mv-15 btn-like">
+                     <i class="fa-solid fa-thumbs-up"></i>
+                     <!-- <i class="fa-solid fa-check"></i> -->
+                     Like
+                  </button>
+                  <button class="btn blog-btn-footer mv-15 blog-btn-footer--black btn-cmt">
+                     Replies <span class="highlight--bg-white">1</span>
+                  </button>
+               </div>
+               <div class="blog-comments hide">
+                  <hr>
+                  <div class="card-entry comment-entry">
+                     <img src="./assets/images/avatar_smoke.jpg" alt="Avatar Smoke" class="card-img">
+                     <div class="card-container comment-container">
+                        <p class="card-info mv-10">George <span class="highlight--opacity">May 3, 2015, 6:32 PM</span></p>
+                        <p class="card-content mv-15">Great blog post! Following</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <hr>
+            <div class="blog-entry">
+               <div class="blog-heading">
+                  <h3>TITLE HEADING</h3>
+                  <h5>Title description, <span class="highlight--grey">April 23, 2016</span></h5>
+               </div>
+               <div class="blog-container">
+                  <img src="./assets/images/man_hat.jpg" alt="Man Hat">
+                  <div class="blog-content">
+                     <p class="mv-15"><span class="highlight--bold">Hats!</span> The trend this summer is hats for men!</p>
+                     <p class="mv-15">Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                  </div>
+               </div>
+               <div class="blog-footer">
+                  <button class="btn blog-btn-footer blog-btn-footer--white mv-15 btn-like">
+                     <i class="fa-solid fa-thumbs-up"></i>
+                     <!-- <i class="fa-solid fa-check"></i> -->
+                     Like
+                  </button>
+                  <button class="btn blog-btn-footer mv-15 blog-btn-footer--black btn-cmt">
+                     Replies <span class="highlight--bg-white">2</span>
+                  </button>
+               </div>
+               <div class="blog-comments hide">
+                  <hr>
+                  <div class="card-entry comment-entry">
+                     <img src="./assets/images/girl_train.jpg" alt="Girl Train" class="card-img">
+                     <div class="card-container comment-container">
+                        <p class="card-info mv-10">Amber <span class="highlight--opacity">April 26, 2015, 10:52 PM</span></p>
+                        <p class="card-content mv-15">Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                     </div>
+                  </div>
+                  <div class="card-entry comment-entry">
+                     <img src="./assets/images/girl.jpg" alt="Girl" class="card-img">
+                     <div class="card-container comment-container">
+                        <p class="card-info mv-10">Angie <span class="highlight--opacity">April 23, 2015, 9:12 PM</span></p>
+                        <p class="card-content mv-15">Love hats!!</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <hr>
+            <div class="blog-entry">
+               <div class="blog-heading">
+                  <h3>TITLE HEADING</h3>
+                  <h5>Title description, <span class="highlight--grey">April 7, 2016</span></h5>
+               </div>
+               <div class="blog-container">
+                  <img src="./assets/images/runway.jpg" alt="Run away">
+                  <div class="blog-content">
+                     <p class="mv-15"><span class="highlight--bold">Dont miss!</span> The runway in New York City this weekend is gonna be legendary!</p>
+                     <p class="mv-15">Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                  </div>
+               </div>
+               <div class="blog-footer">
+                  <button class="btn blog-btn-footer blog-btn-footer--white mv-15 btn-like">
+                     <i class="fa-solid fa-thumbs-up"></i>
+                     <!-- <i class="fa-solid fa-check"></i> -->
+                     Like
+                  </button>
+                  <button class="btn blog-btn-footer mv-15 blog-btn-footer--black btn-cmt">
+                     Replies <span class="highlight--bg-white">3</span>
+                  </button>
+               </div>
+               <div class="blog-comments hide">
+                  <hr>
+                  <div class="card-entry comment-entry">
+                     <img src="./assets/images/girl_mountain.jpg" alt="Girl Mountain" class="card-img">
+                     <div class="card-container comment-container">
+                        <p class="card-info mv-10">Jane <span class="highlight--opacity">April 10, 2015, 7:22 PM</span></p>
+                        <p class="card-content mv-15">That was a great runway show! Thanks for everything.</p>
+                     </div>
+                  </div>
+                  <div class="card-entry comment-entry">
+                     <img src="./assets/images/boy.jpg" alt="Boy" class="card-img">
+                     <div class="card-container comment-container">
+                        <p class="card-info mv-10">
+                           John <span class="highlight--opacity">April 8, 2015, 10:32 PM</span></p>
+                        <p class="card-content mv-15">Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                     </div>
+                  </div>
+                  <div class="card-entry comment-entry">
+                     <img src="./assets/images/girl_hood.jpg" alt="Girl Hood" class="card-img">
+                     <div class="card-container comment-container">
+                        <p class="card-info mv-10">Anja <span class="highlight--opacity">April 7, 2015, 9:12 PM</span></p>
+                        <p class="card-content mv-15">Cant wait for the runway to start!</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- About/Info -->
+         <div class="col lg-4 m-12 sm-12">
+            <!-- About card -->
+            <div class="about-card">
+               <img src="./assets/images/avatar_girl2.jpg" alt="About me" class="about-card__img">
+               <div class="about-info">
+                  <h4 class="about-info__name mv-10">Dainn Đinh</h4>
+                  <p class="about-info__desc mv-15">Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+               </div>
+            </div>
+            <hr>
+            <!-- Posts -->
+            <div class="category">
+               <div class="heading">
+                  <h4 class="heading-text mv-10">Popular Posts</h4>
+               </div>
+               <div class="body post">
+                  <div class="card-entry post-entry">
+                     <img src="./assets/images/avatar_smoke.jpg" alt="Avatar Smoke" class="card-img post-img">
+                     <div class="card-container">
+                        <p class="card-info">Denim</p>
+                        <p class="card-content">Sed mattis nunc</p>
+                     </div>
+                  </div>
+                  <div class="card-entry post-entry">
+                     <img src="./assets/images/bandmember.jpg" alt="Avatar Smoke" class="card-img post-img">
+                     <div class="card-container">
+                        <p class="card-info">Sweaters</p>
+                        <p class="card-content">Praes tinci sed</p>
+                     </div>
+                  </div>
+                  <div class="card-entry post-entry">
+                     <img src="./assets/images/workshop.jpg" alt="Avatar Smoke" class="card-img post-img">
+                     <div class="card-container">
+                        <p class="card-info">Workshop</p>
+                        <p class="card-content">Ultricies congue</p>
+                     </div>
+                  </div>
+                  <div class="card-entry post-entry">
+                     <img src="./assets/images/avatar_smoke.jpg" alt="Avatar Smoke" class="card-img post-img img-sepia">
+                     <div class="card-container">
+                        <p class="card-info">Trends</p>
+                        <p class="card-content">Lorem ipsum dipsum</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <hr>
+            <!-- Advertising -->
+            <div class="category">
+               <div class="heading">
+                  <h4 class="heading-text mv-10">Advertise</h4>
+               </div>
+               <div class="body advertise">
+                  <div class="advertise-content">
+                     <span class="advertise-text">Your AD Here</span>
+                  </div>
+               </div>
+            </div>
+            <hr>
+            <!-- Tags -->
+            <div class="category">
+               <div class="heading">
+                  <h4 class="heading-text mv-10">Inspiration</h4>
+               </div>
+               <div class="body p-16">
+                  <span class="tag tag--active">Fashion</span>
+                  <span class="tag">New York</span>
+                  <span class="tag">London</span>
+                  <span class="tag">Hats</span>
+                  <span class="tag">Norway</span>
+                  <span class="tag">Sweaters</span>
+                  <span class="tag">Ideas</span>
+                  <span class="tag">Deals</span>
+                  <span class="tag">Accessories</span>
+                  <span class="tag">News</span>
+                  <span class="tag">Clothing</span>
+                  <span class="tag">Shopping</span>
+                  <span class="tag">Jeans</span>
+                  <span class="tag">Trends</span>
+               </div>
+            </div>
+            <hr>
+            <!-- Inspiration -->
+            <div class="category">
+               <div class="heading">
+                  <h4 class="heading-text mv-10">Inspriration</h4>
+               </div>
+               <div class="grid body inspiration">
+                  <div class="row">
+                     <div class="col lg-6 m-6 sm-12">
+                        <div class="inspriration-enrty">
+                           <img src="./assets/images/jeans.jpg" alt="Jeans" class="inspiration-img">
+                        </div>
+                        <div class="inspriration-enrty">
+                           <img src="./assets/images/team1.jpg" alt="Team 1" class="inspiration-img">
+                        </div>
+                     </div>
+                     <div class="col lg-6 m-6 sm-12">
+                        <div class="inspriration-enrty">
+                           <img src="./assets/images/avatar_hat.jpg" alt="Avatar Hat" class="inspiration-img">
+                        </div>
+                        <div class="inspriration-enrty">
+                           <img src="./assets/images/team4.jpg" alt="Team 4" class="inspiration-img">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <hr>
+            <!-- Follow me -->
+            <div class="category">
+               <div class="heading">
+                  <h4 class="heading-text mv-10">Inspiration</h4>
+               </div>
+               <div class="body p-16 socials">
+                  <i class="fa-brands social-icon fa-square-facebook"></i>
+                  <i class="fa-brands social-icon fa-instagram"></i>
+                  <i class="fa-brands social-icon fa-snapchat"></i>
+                  <i class="fa-brands social-icon fa-pinterest-p"></i>
+                  <i class="fa-brands social-icon fa-twitter"></i>
+                  <i class="fa-brands social-icon fa-linkedin-in"></i>
+               </div>
+            </div>
+            <hr>
+            <!-- Subscribe -->
+            <div class="category">
+               <div class="heading">
+                  <h4 class="heading-text mv-10">Inspiration</h4>
+               </div>
+               <div class="body p-16 subs">
+                  <p class="subs__text mv-15">Enter your e-mail below and get notified on the latest blog posts.</p>
+                  <div class="mv-15">
+                     <input type="email" name="Email" class="subs__input" placeholder="Enter your's e-mail">
+                  </div>
+                  <div class="mv-15">
+                     <button class="btn subs__btn" 
+                        onclick="document.getElementById('modal').style.display='block'">
+                        Subscribe
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Modal Subs -->
+   <div class="modal" id="modal">
+         <div class="modal-container">
+            <div class="modal-wrap">
+               <i class="fa-solid fa-xmark modal-close" onclick="document.getElementById('modal').style.display='none'"></i>
+               <h2 class="modal-title mv-10">SUBSCRIBE</h2>
+               <p class="sub__text mv-15">Join my mailing list to receive updates on the latest blog posts and other things.</p>
+               <div class="mv-15">
+                  <input type="email" name="Email" class="subs__input" placeholder="Enter your's e-mail">
+               </div>
+               <div class="mv-15">
+                  <button class="btn btn-size-l subs__btn" onclick="document.getElementById('modal').style.display='none'">Subscribe</button>
+               </div>
+            </div>
+         </div>
+   </div>
+   <!-- Footer -->
+   <footer class="footer">
+      <a href="#" class="btn btn-size-l btn-footer">
+         <i class="fa-solid fa-arrow-up btn-footer-icon"></i>
+         To the top
+      </a>
+      <p class="copyright mv-15">Powered by <a href="#!" class="copyright-link">w3.css</a></p>
+      <p class="copyright mv-15">Cloned by <a href="#!" class="copyright-link dainn">Dainn</a></p>
+   </footer>
+   <script>
+      // Hide/Show comments
+      const btnCmts = document.querySelectorAll('.btn-cmt')
+      btnCmts.forEach(function(item, index) {
+         item.onclick = function() {
+            const blogCmts = document.querySelectorAll('.blog-comments')
+            blogCmts[index].classList.toggle('hide')
+         }
+      })
+
+      // Liked/Unlike
+      const btnLike = document.querySelectorAll('.btn-like')
+      const iconChange = document.querySelectorAll('.fa-thumbs-up')
+      btnLike.forEach(function(item, index) {
+         item.onclick = function() {
+            if (iconChange[index].classList.contains('fa-thumbs-up')) {
+               iconChange[index].classList.replace('fa-thumbs-up','fa-check')
+               this.style.fontWeight = '700'
+            } else {
+               iconChange[index].classList.replace('fa-check','fa-thumbs-up')
+               this.style.fontWeight = '500'
+            }
+         }
+      })
+   </script>
+</body>
+</html>
